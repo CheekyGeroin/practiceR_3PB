@@ -7,7 +7,7 @@ export class ContactList extends Component {
     const { contacts, onDelete } = this.props;
     return (
       <List>
-        {contacts.length > 1 &&
+        {contacts.length >= 1 &&
           contacts.map(({ id, name, number }) => (
             <Contact
               key={id}
